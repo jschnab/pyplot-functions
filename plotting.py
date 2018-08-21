@@ -23,9 +23,9 @@ def drange(start=-10, stop=10, by=.1):
         start += decimal.Decimal(by)
 
 def plotGraph(p, start=None, stop=None, xname='x axis', yname='y axis'):
-    """Return  the graph of a mathematical function and shows the plot. xrange
-should specificy the interval [start,stop] of x values to calculate the y values
-of the polynomial function whose constants are in the list "p"."""
+    """Return  the graph of a mathematical function and shows the plot. 
+    start and stop specify the interval of x values to calculate the y values
+    of the polynomial function whose constants are in the list "p"."""
     #generate the range of x values
     if start == None or stop == None:
               x = np.linspace(-10,10,200)
